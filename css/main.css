@@ -1,0 +1,855 @@
+
+/*  === ABSTRACTS === */
+
+/* boites */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* clearfix */
+.clearfix::after {
+    content:'';
+    clear: both;
+    display: table;
+}
+
+/* images flexibles */
+img {
+    display:block;
+    width:100%;
+    height:auto;
+    
+}
+
+* {
+    font-family: 'Digital Sans';
+    color: rgb(113, 113, 122);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* ======================================= */
+
+/*  === VARIABLES === */
+
+/*  === GRILLE === */
+
+h1,h2,h3,h4,h5,h6,p {
+    margin:0px;
+}
+
+/*  === TEXTES & POLICES === */
+
+@font-face {
+    font-family: 'Mack';
+    src: url('../fonts/Mack-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Digital Sans';
+    src: url('../fonts/DigitalSans-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*  === NAVIGATIONS === */
+
+/*  === COMPOSANTS (formulaires, produits) === */
+
+/*  === DIVERS === */
+
+/* === Animation bg projets === */
+
+@keyframes hovercontactemail {
+    0% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 30% 70%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    5% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 35% 65%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    10% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 40% 60%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    15% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 45% 55%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    20% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 50% 50%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    25% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 55% 45%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    30% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 60% 40%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    40% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 65% 35%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    50% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 70% 30%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    60% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 65% 35%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    70% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 60% 40%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    75% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 55% 45%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    80% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 50% 50%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    85% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 45% 55%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    90% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 40% 60%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    95% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 35% 65%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    100% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 30% 70%, rgba(69, 178, 255, 0.13), transparent)
+    }
+}
+
+@keyframes hovercontact {
+    0% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 70% 30%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    5% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 65% 35%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    10% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 60% 40%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    15% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 55% 45%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    20% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 50% 50%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    25% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 45% 55%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    30% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 40% 60%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    40% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 35% 65%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    50% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 30% 70%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    60% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 35% 65%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    70% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 40% 60%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    75% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 45% 55%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    80% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 50% 50%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    85% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 55% 45%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    90% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 60% 40%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    95% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 65% 35%, rgba(69, 178, 255, 0.13), transparent)
+    }
+
+    100% {
+        background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 70% 30%, rgba(69, 178, 255, 0.13), transparent)
+    }
+}
+
+@keyframes myAnim {
+	0% {
+        transform: scale(2, 2);
+	}
+
+	/* 25% {
+		transform: translateX(-4px) rotate(-3deg);
+        
+	}
+
+	50% {
+		transform: translateX(2px) rotate(1.2deg);
+	}
+
+	75% {
+		transform: translateX(-3px) rotate(-0.6deg);
+	} */
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+}
+
+body {
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent),
+        radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent)
+}
+
+canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+canvas a {
+    position: absolute;
+    bottom: 2vmin;
+    right: 2vmin;
+    color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
+canvas a:hover {
+    color: #fff;
+}
+
+/* ======================================= */
+
+
+
+/*  === BODY === */ 
+
+.accueil {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100vw;
+    height:100vh;
+    z-index:1;
+    position:absolute;
+}
+
+.accueil h1 {
+    font-size:140px;
+    margin:40px 0px;
+    color:#FFFFFF;
+    margin-top:50px;
+    font-family: 'Mack';
+    letter-spacing: -0.03em;
+    animation-duration: 2s;
+    animation-name: myAnim;
+    text-align: center;
+}
+
+.accueil nav ul li a {
+    padding:0px 10px;
+    font-size:14px;
+    cursor: pointer;
+}
+
+.accueil nav ul li a:hover {
+    color:#ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+.accueil p {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ============================================================= */
+
+/*  === HEADER === */
+
+header {
+    padding:30px 0px;
+    height:10vh;
+}
+
+header img {
+    height:20px;
+    width:20px;
+    opacity: 50%;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+header img:hover {
+    opacity: 90%;
+}
+
+header nav a {
+    margin-left:20px;
+}
+
+header nav a:hover {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    opacity:90%;
+}
+
+.titleproject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:25vh;
+    border-bottom:1px solid rgb(113, 113, 122, 0.3);
+    padding:0px;
+}
+
+.titleproject h1{
+    color:#fff;
+    font-family: 'Mack';
+    padding-bottom:20px;
+    font-size:42px;
+}
+
+.titleproject h6 {
+    font-size:16px;
+}
+
+.project {
+    height:65vh;
+    padding:60px 0px;
+}
+
+.left-content-project a {
+    height:100%;
+}
+
+.left-big-project {
+    min-width: 48%;
+    height:49vh;
+    border: 1px solid rgb(113, 113, 122, 0.3);
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    padding:30px;
+    position: relative;
+}
+
+.left-big-project h6 {
+    font-size:16px;
+    line-height: 30px;
+}
+
+.right-little-projects h6 {
+    font-size:14px;
+    line-height: 20px;
+}
+
+.topbar-project {
+    margin-bottom:20px;
+    font-size:12px;
+}
+
+.topbar-project p {
+    color:#fff;
+}
+
+.nbrvue {
+    align-items: center;
+}
+
+.nbrvue p {
+    color:unset !important;
+    margin-left:5px;
+}
+
+.nbrvue img {
+    height:15px;
+    width:15px;
+    opacity:60%;
+}
+
+.left-big-project h2 {
+    font-family: 'Mack';
+    color:#fff;
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.left-big-project .readmore p {
+    position:absolute;
+    bottom:30px;
+    left:30px;
+    color:#fff;
+}
+
+.top-little-project {
+    border: 1px solid rgb(113, 113, 122, 0.3);
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    position: relative;
+    margin-bottom:35px;
+}
+
+.right-little-projects {
+    min-height: 100%;
+    width:48.5%;
+}
+
+.right-little-projects a{
+    min-height: 100%;
+}
+
+
+.left-content-project {
+    height:100%;
+    width:48.5%;
+}
+
+.right-little-projects h2 {
+    font-family: 'Mack';
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.top-little-project .readmore p {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #fff;
+}
+
+.bottom-little-project {
+    border: 1px solid rgb(113, 113, 122, 0.3);
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+}
+
+/* === CONTACT === */
+
+.contact {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:90vh;
+    margin-top:-30px;
+}
+
+.contact img {
+    width:23vw;
+    height:60vh;
+    border-radius: 10px;
+}
+
+.contact .contact-linkedin,
+.contact .contact-email,
+.contact .photoprofil {
+    width: 100%;
+    height:60vh;
+    border:1px solid rgb(113, 113, 122, 0.3);
+    border-radius:10px;
+    background-color: #000;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-cv {
+    width:30%;
+}
+
+.contact a {
+    width:30%;
+}
+
+.cv-content a {
+    width: unset;
+}
+
+.contact-email {
+    background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+        radial-gradient(circle at 20% 80%, rgba(69, 178, 255, 0.13), transparent)
+}
+
+.contact-linkedin {
+    background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 70% 30%, rgba(69, 178, 255, 0.13), transparent)
+}
+
+.newbg {
+    background-image: radial-gradient(circle at bottom left, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 30% 70%, rgba(69, 178, 255, 0.13), transparent)
+}
+
+.photoprofil {
+    background: transparent url(../images/PProfil.png) no-repeat center center /cover;
+    height: 45vh !important;
+    border:unset !important;
+}
+
+.img-container {
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    background-color: #0d021e;
+    border:1px solid rgba(255, 255, 255, 0.3) ;
+    position: relative;
+    margin-bottom:30px;
+    margin-top:-60px;
+}
+
+.img-container::after {
+    content: "";
+    position: absolute;
+    height:1px;
+    width:15vw;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    top:102%;
+    left:50%;
+    transform-origin: top left;
+    transform: rotate(90deg);
+}
+
+.contact-email .img-container {
+    background: transparent url(../images/email.svg) no-repeat center center;
+    background-size: 40%;
+}
+
+.contact-linkedin .img-container {
+    background: transparent url(../images/Linkedin.svg) no-repeat center center;
+    background-size: 35%;
+}
+
+.contact h2 {
+    font-size:24px;
+    font-family: "Mack";
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.contact p {
+    font-size:14px;
+}
+
+.animationhovercontact {
+    animation-duration: 0.5s;
+    animation-name: hovercontact;
+}
+
+.animationhovercontactemail {
+    animation-duration: 0.5s;
+    animation-name: hovercontactemail;
+}
+
+.cv-content {
+    height:15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cv {
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.cv p {
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-family: 'Mack';
+}
+
+.img-cv-container {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #0d021e;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    margin-left: 10px;
+}
+
+.contact-cv .img-cv-container {
+    background: transparent url(../images/Download.svg) no-repeat center center;
+    background-size: 35%;
+}
+
+@media (max-width:768px) {
+    header {
+        padding:30px 30px;
+        height:unset;
+    }
+    .contact-cv {
+            flex-basis: 100%;
+            min-width: 100%;
+        }
+    .photoprofil, .contact-email, .contact-linkedin, .contact a {
+        width:100% !important;
+    }
+    .contact {
+        height:90vh;
+        margin-top:0px;
+        padding:0px 30px;
+    }
+    .contact-linkedin, .contact-email {
+        height:25vh !important;
+        margin-bottom:30px;
+    }
+    .img-container {
+        margin-top:0px;
+    }
+    .cv {
+        justify-content: center;
+    }
+    .contact-cv {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .photoprofil {
+        display: none !important;
+    }
+    .cv-content {
+        margin-top:-20px;
+    }
+
+    /* PROJECT */
+
+    .left-content-project {
+        width:100%;
+        height:unset;
+    }
+    .left-big-project, .top-little-project, .bottom-little-project {
+        height: unset !important;
+    }
+    .readmore {
+        display:none;
+    }
+    .project {
+        margin-top:40px;
+        padding-top:0px;
+    }
+    .titleproject {
+        height:unset;
+        padding-bottom:40px;
+    }
+    .titleproject h1 {
+        font-size:32px;
+    }
+    .p-30 {
+        padding:0px 30px;
+    }
+    .right-little-projects {
+        width:100%;
+    }
+
+    /* CONTACT */
+
+
+
+    /* ACCUEIL */
+
+    .accueil h1 {
+        font-size:42px;
+        margin:30px 0px;
+    }
+    .accueil p {
+        font-size:14px;
+        padding:0px 60px;
+    }
+    .accueil nav ul li a {
+        font-size:16px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    .contact h2 {
+        font-size:16px;
+    }
+}
+
+/* PROJECTS - PAGE */
+
+.header-project {
+    height:45vh;
+    display: flex;
+    align-items: center;
+}
+
+.headerbar img {
+    height:20px;
+    width:20px;
+    opacity:60%;
+    margin-left:30px;
+}
+
+.headerbar img:hover {
+    opacity:100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.headerbar {
+    padding:30px 0px;
+    height:10vh;
+}
+
+.project-header-content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:-70px;
+}
+
+.header-project h1 {
+    color:#fff;
+    font-family: 'Mack';
+    font-size:60px;
+}
+
+.header-project h6 {
+    font-size:18px;
+    color: #fff;
+    padding:20px 230px;
+    line-height: 30px;
+    padding-bottom:50px;
+}
+
+.header-project a {
+    color:#fff;
+    font-family: 'mack';
+}
+
+.content-project {
+    background-color: rgb(250 250 250);
+    padding:100px;
+}
+
+.content-project img {
+    width:50%;
+    border-radius:10px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.content-project p {
+    width:50%;
+    margin: auto;
+    line-height:26px;
+    color:#3e3e3e;
+}
+
+.content-project video {
+    width:50%;
+    margin:auto;
+    margin-bottom:30px;
+    border-radius:10px;
+}
+
+.mep-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* AJUSTEMENTS RESPONSIVE PAGE PROJETS */
+
+@media (max-width:768px) {
+    .left-headerbar {
+        padding-right:30px;
+    }
+    .header-project h6 {
+        padding:20px;
+    }
+    .header-project h1 {
+        font-size:36px;
+    }
+    .content-project p {
+        width:100%;
+    }
+    .content-project {
+        padding:30px;
+    }
+    .content-project img, .content-project video {
+        width:100%;
+    }
+}
