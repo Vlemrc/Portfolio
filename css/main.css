@@ -642,6 +642,7 @@ header nav a:hover {
     header {
         padding:30px 30px;
         height:unset;
+        backdrop-filter: blur(10px);
     }
     .contact-cv {
             flex-basis: 100%;
