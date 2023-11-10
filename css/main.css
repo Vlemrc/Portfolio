@@ -244,19 +244,6 @@ h1,h2,h3,h4,h5,h6,p {
 	0% {
         transform: scale(2, 2);
 	}
-
-	/* 25% {
-		transform: translateX(-4px) rotate(-3deg);
-        
-	}
-
-	50% {
-		transform: translateX(2px) rotate(1.2deg);
-	}
-
-	75% {
-		transform: translateX(-3px) rotate(-0.6deg);
-	} */
     100% {
         transform: translateX(0%);
         transform-origin: 50% 50%;
@@ -291,8 +278,6 @@ canvas a:hover {
 }
 
 /* ======================================= */
-
-
 
 /*  === BODY === */ 
 
@@ -738,6 +723,16 @@ header nav a:hover {
     .accueil nav ul li a {
         font-size:16px;
     }
+
+    /* NAVIGATION */
+
+    .fixed-nav #nav {
+        position: fixed;
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgb(113, 113, 122, 0.3);
+        width: 100vw;
+        z-index: 2;
+    }
 }
 
 @media (min-width:768px) and (max-width:1200px) {
@@ -831,6 +826,26 @@ header nav a:hover {
     align-items: center;
 }
 
+.header-project {
+    position: relative;
+}
+
+.skills-use {
+    position:absolute;
+    bottom:20px;
+    right:13%;
+}
+
+.skills-use img {
+    height:40px;
+    width:40px;
+    margin-left:5px;
+}
+
+.header-project-btn a {
+    margin:0px 5px;
+}
+
 /* AJUSTEMENTS RESPONSIVE PAGE PROJETS */
 
 @media (max-width:768px) {
@@ -851,5 +866,10 @@ header nav a:hover {
     }
     .content-project img, .content-project video {
         width:100%;
+    }
+    .skills-use img {
+        height: 25px;
+        width: 25px;
+        margin-left: 5px;
     }
 }
