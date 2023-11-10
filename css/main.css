@@ -735,6 +735,7 @@ header nav a:hover {
         z-index: 2;
     }
         .fixed-nav #nav::before {
+            --webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             content: "";
             display: block;
